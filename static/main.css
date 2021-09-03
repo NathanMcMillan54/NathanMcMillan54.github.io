@@ -1,0 +1,21 @@
+body {
+    background-color: #dceafd;
+}
+
+.heading {
+    background-color: #a7c4fa;
+    padding: 0.5%;
+}
+
+.heading h1 h3 p {
+    color: #2d2d2d;
+}
+
+.main-content {
+    background-color: #a7c4fa;
+    padding: 3%;
+}
+
+.main-content h1 h3 p {
+    color: #2d2d2d;
+}
