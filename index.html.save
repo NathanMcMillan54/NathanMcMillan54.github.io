@@ -26,11 +26,11 @@
 
 	<br>
 
-	<p>I thought something should be here. So here is some text that you're reading.</p>
 	
+
 	<br>
 
-	<h3>Novusk v3-beta Kernel 2 running on a Pi:</h3>
+	<h3>My kernel running on a Pi:</h3>
 	<p>2021/9/4 18:47</p>
 	<video width="300" height="125" controls>
 		<source src="https://raw.githubusercontent.com/NathanMcMillan54/novusk/master/images/aarch64-rpi3b-novusk.mp4" type="video/mp4">
