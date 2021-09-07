@@ -19,3 +19,8 @@ body {
 .main-content h1 h3 p {
     color: #2d2d2d;
 }
+
+.disclaimer {
+    background-color: #faa7a7;
+    padding: 1%;
+}
