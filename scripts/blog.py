@@ -24,7 +24,7 @@ title += f" {date}"
 # HTML stuff
 html_output = f"<html>\n<head>\n<link rel=\"stylesheet\" href=\"../../static/main.css\">\n<title>{title}</title>\n</head>\n<body>\n"
 
-html_output += f"<div class=\"heading\">\n<!-- Generated from scripts/blog.py -->\n<h1>{title}</h1>\n</div>\n"
+html_output += f"<div class=\"heading\">\n<!-- Generated from scripts/blog.py -->\n<h1>{title}</h1>\n</div>\n<br>"
 html_output += f"<div class=\"main-content\">\n"
 
 for p in paragraphs:
@@ -41,3 +41,11 @@ if os.path.exists(f"blog/{day}/") == False:
 html_file = open(f"blog/{day}/{date}.html", "x")
 html_file.write(html_output)
 html_file.close()
+
+blog_file = open("blog/main.html", "r")
+file_contents = blog_file.read()
+file_contents = file_contents.replace("</div>\n</body>\n</html>", f"<a href=\"{day}/{date}.html\">{date}</a><br>\n</div>\n</body>\n</html>")
+blog_file = open("blog/main.html", "w")
+print(file_contents)
+blog_file.write(file_contents)
+blog_file.close()
