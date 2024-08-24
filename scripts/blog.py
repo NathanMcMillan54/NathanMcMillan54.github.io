@@ -28,7 +28,7 @@ html_output += f"<div class=\"heading\">\n<!-- Generated from scripts/blog.py --
 html_output += f"<div class=\"main-content\">\n"
 
 for p in paragraphs:
-    if str(p).startswith("<h1>") and str(p).endswith("</h1>"):
+    if str(p).startswith("<") and str(p).endswith(">"): # Inline HTML
         html_output += f"{p}\n"
     else:
         html_output += f"<p>{p}</p>\n"

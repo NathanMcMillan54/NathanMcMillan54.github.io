@@ -1,0 +1,22 @@
+<html>
+<head>
+<link rel="stylesheet" href="../../static/main.css">
+<title>DLW explaination 24-08-2024-20:35</title>
+</head>
+<body>
+<div class="heading">
+<!-- Generated from scripts/blog.py -->
+<h1>DLW explaination 24-08-2024-20:35</h1>
+</div>
+<br><div class="main-content">
+<h3>What Is DarkLight?</h3>
+<p><a href="https://github.com/NathanMcMillan54/dlw">DarkLight Web</a> is intended to be a decentralized alternative web seperate from the Wrld Wide Web. Today what is shown on the web is dictated by a few monopolies and what people intentionally show themselves also comes from the same few monopolies that use algorithms that are intentionally adictive. DarkLight should allow people to have a "fresh start" in the digital world and have more control over what content they see and create, privacy can be prioritzed by websites and servers, a lack of algorithms or use of very simple algorithms can be normalized.</p>
+<h3>Instances & Distributors</h3>
+<p>DarkLight is supposed to be decentralized, anyone should be able to easily start their own instance. Maybe that instance is supposed to be used for a specific reason. A group of friends or like minded people could have a small instance dedicated to their values or a buisness could start an instance intended to be used by their employees for communication or testing, or maybe someone just wants a public general use instance. An instance of DarkLight is simply a set of distributors connected to eachother that are capable of connecting to DarkLight services (like <a href="https://github.com/NathanMcMillan54/dlw/tree/main/documentation/cns">"CNS"</a> or <a href="https://github.com/NathanMcMillan54/dlw/blob/main/documentation/information_servers.md#new-key-server">"keyss"</a>), some people might decide to not include the same services as the original DarkLight instance or might have more. What is currently being added to the "dlw" repository is a library and possibly a few binaries to manage an entire instance.</p>
+<p>Distributors are how information on DarkLight is intended to be sent and received, they "distribute" information. Users can connect to a distributor to send and receive information from other users but distributors can also be connected to each other. Two users can communicate with each other while being connected to two different distributors, this is intended to give users some privacy by slightly reducing traceblility by not sending data directly to the receiver.</p>
+<h3>Developing DarkLight</h3>
+<p>Something that I think should be pointed out is how DarkLight was originally developed. Put simply, poorly. I started DarkLight in a private repository and wanted to develop and release it as quickly as possible with the little time I had. When I had a somewhat working poof-of-concept it was incredibly slow, it used an enourmous amount of memory and CPU power, and most of the code was (and still is) not thread safe. But it worked. So I decided to start a public repository where I could somewhat properly rewrite DarkLight from what was in the private repository. I will say the majority of the code from "darklight_driver" has barely been changed but I really feel that it should, at least now it's nowhere near as resource intensive. I still have not properly added the code for distributors for a similar reason because it is not very good.</p>
+<p>Now that I have more spare time I will try to work more on this and have it properly released. DarkLight can be released, it is useable (if you have a key), I just don't want all of the code public at the moment but it will be soon.</p>
+</div>
+</body>
+</html>
